@@ -13,8 +13,8 @@
     <ProjectGuid>{25B02CA0-6ABF-4FB3-A2B0-30184D3A7A70}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtensibilityTemplates</RootNamespace>
-    <AssemblyName>ExtensibilityTemplates</AssemblyName>
+    <RootNamespace>VSIXItemTemplates</RootNamespace>
+    <AssemblyName>VSIXItemTemplates</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -48,6 +48,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ItemTemplates\CommandHandlerTemplate\CommandHandlerTemplate.csproj">
+      <Project>{09291CD7-0A88-4D32-8096-D9C866F335AE}</Project>
+      <Name>CommandHandlerTemplate</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="ItemTemplates\OptionsPageTemplate\OptionsPageTemplate.csproj">
       <Project>{8A9427D9-712F-4BF7-9063-129BAA486703}</Project>
       <Name>OptionsPageTemplate</Name>
