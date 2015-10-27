@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="Microsoft.VSIXItemTemplates.707d5ad8-8ee6-45ad-bf29-ea9d4e1a8fea" Version="1.0" Language="en-US" Publisher="Microsoft Corporation" />
-    <DisplayName>VSIX Item Templates</DisplayName>
-    <Description xml:space="preserve">Add community made item templates for creating Visual Studio extensions.</Description>
+    <Identity Id="Microsoft.VSSDKTemplates.707d5ad8-8ee6-45ad-bf29-ea9d4e1a8fea" Version="1.0" Language="en-US" Publisher="Microsoft Corporation" />
+    <DisplayName>VSSDK Extensibility Templates</DisplayName>
+    <Description xml:space="preserve">Add community made templates for creating Visual Studio extensions.</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
