@@ -3,7 +3,7 @@
   <TemplateData>
     <Name>Options Page</Name>
     <Description>Add options page to a Visual Studio Package</Description>
-    <Icon>OptionsPage.ico</Icon>
+    <Icon>OptionsPageIcon.png</Icon>
     <TemplateID>VsixOptionsPageCSharp</TemplateID>
     <AppliesTo>VSIX + CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
