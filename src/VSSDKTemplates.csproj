@@ -57,14 +57,14 @@
     </ProjectReference>
     <ProjectReference Include="ItemTemplates\OptionsPageTemplate\OptionsPageTemplate.csproj">
       <Project>{8A9427D9-712F-4BF7-9063-129BAA486703}</Project>
-      <Name>OptionsPage</Name>
+      <Name>OptionsPageTemplate</Name>
       <VSIXSubPath>ItemTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
     <ProjectReference Include="ItemTemplates\WpfTextViewCreationListenerTemplate\WpfTextViewCreationListenerTemplate.csproj">
       <Project>{92475953-06B5-4FB3-9F6A-2860DAFA49DC}</Project>
-      <Name>WpfTextViewCreationListener</Name>
+      <Name>WpfTextViewCreationListenerTemplate</Name>
       <VSIXSubPath>ItemTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>

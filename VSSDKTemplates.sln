@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSIXItemTemplates", "src\VSIXItemTemplates.csproj", "{25B02CA0-6ABF-4FB3-A2B0-30184D3A7A70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSSDKTemplates", "src\VSSDKTemplates.csproj", "{25B02CA0-6ABF-4FB3-A2B0-30184D3A7A70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTextViewCreationListenerTemplate", "src\ItemTemplates\WpfTextViewCreationListenerTemplate\WpfTextViewCreationListenerTemplate.csproj", "{92475953-06B5-4FB3-9F6A-2860DAFA49DC}"
 EndProject
