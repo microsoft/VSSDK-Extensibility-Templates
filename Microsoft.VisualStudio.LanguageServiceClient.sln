@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23103.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.VisualStudio.LanguageServiceClient", "Microsoft.VisualStudio.LanguageServiceClient\Microsoft.VisualStudio.LanguageServiceClient.csproj", "{EF2A6433-1C4C-4227-B52E-865DF129B074}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF2A6433-1C4C-4227-B52E-865DF129B074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2A6433-1C4C-4227-B52E-865DF129B074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2A6433-1C4C-4227-B52E-865DF129B074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2A6433-1C4C-4227-B52E-865DF129B074}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

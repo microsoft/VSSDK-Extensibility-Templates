@@ -10,13 +10,15 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+*.sln.docstates
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
-x64/
 x86/
+x64/
 build/
 bld/
 [Bb]in/
@@ -24,6 +26,9 @@ bld/
 
 # Visual Studio 2015 cache/options directory
 .vs/
+
+# Roslyn cache directories
+*.ide/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -41,7 +46,6 @@ dlldata.c
 # DNX
 project.lock.json
 artifacts/
-
 *_i.c
 *_p.c
 *_i.h
@@ -149,6 +153,18 @@ publish/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
 
+# NuGet Packages Directory
+packages/*
+## TODO: If the tool you use requires repositories.config
+## uncomment the next line
+#!packages/repositories.config
+
+# Enable "build/" folder in the NuGet Packages folder since
+# NuGet packages use it for MSBuild targets.
+# This line needs to be after the ignore of the build folder
+# (and the packages folder if the line above has been uncommented)
+!packages/build/
+
 # Windows Azure Build Output
 csx/
 *.build.csdef
@@ -163,6 +179,8 @@ AppPackages/
 !*.[Cc]ache/
 
 # Others
+sql/
+*.Cache
 ClientBin/
 [Ss]tyle[Cc]op.*
 ~$*
@@ -173,6 +191,8 @@ ClientBin/
 *.publishsettings
 node_modules/
 orleans.codegen.cs
+bower_components/
+.vs/
 
 # RIA/Silverlight projects
 Generated_Code/
