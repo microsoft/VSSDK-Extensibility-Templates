@@ -49,4 +49,5 @@ VSPackage Templates are tougher to implement. In order to not create a package f
 For instance, when you add a Tool Window to a blank VSIX project, it will create a package class. If you then add a custom command, it will use the same package that the Tool Window created.
 
 We have an example implementation of an item template in the [OptionsPageTemplate](https://github.com/Microsoft/VSSDK-Extensibility-Templates/tree/master/src/ItemTemplates/OptionsPageTemplate). 
-Pay close attention to the [.vstemplate](https://github.com/Microsoft/VSSDK-Extensibility-Templates/blob/master/src/ItemTemplates/OptionsPageTemplate/OptionsPage.vstemplate) and [VsPkg.cs](https://github.com/Microsoft/VSSDK-Extensibility-Templates/blob/master/src/ItemTemplates/OptionsPageTemplate/VsPkg.cs) files.
+Pay close attention to the [.vstemplate](https://github.com/Microsoft/VSSDK-Extensibility-Templates/blob/master/src/ItemTemplates/OptionsPageTemplate/OptionsPage.vstemplate) and [VsPkg.cs](https://github.com/Microsoft/VSSDK-Extensibility-Templates/blob/master/src/ItemTemplates/OptionsPageTemplate/VsPkg.cs) files. It is recommended to copy the VsPkg.cs file directly into your template project, 
+to simplify things.
