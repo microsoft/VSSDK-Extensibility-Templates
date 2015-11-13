@@ -1,4 +1,6 @@
 # Visual Studio Extensibility Templates
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](http://aka.ms/ihb37w)
+
 This repo contains item templates that help you develop Visual Studio extensions.
 
 We love to hear your feedback! Add templates you would like to see as Issues. Also we welcome pull requests to improve existing or add new templates. Check out the contributing guidelines.
