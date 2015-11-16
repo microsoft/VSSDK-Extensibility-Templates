@@ -12,9 +12,7 @@ Templates currently included:
 * WpfTextViewCreationListenerTemplate - Create a basic implementation of IWpfTextViewCreationListener.
 
 ## How to use the templates
-* Clone the repository
-* Build vsix
-* Install vsix
+Download and install the latest build from the [releases page](https://github.com/Microsoft/VSSDK-Extensibility-Templates/releases/latest).
 
 ## Creating a template
 
