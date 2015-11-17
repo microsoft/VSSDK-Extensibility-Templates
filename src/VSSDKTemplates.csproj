@@ -48,7 +48,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PeekRelationshipItemTemplate\PeekRelationshipTemplate.csproj">
+    <ProjectReference Include="ItemTemplates\PeekRelationshipTemplate\PeekRelationshipTemplate.csproj">
       <Project>{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}</Project>
       <Name>PeekRelationshipTemplate</Name>
       <VSIXSubPath>ItemTemplates</VSIXSubPath>
