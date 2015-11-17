@@ -8,22 +8,24 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{25B02CA0-6ABF-4FB3-A2B0-30184D3A7A70}</ProjectGuid>
+    <ProjectGuid>{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VSIXItemTemplates</RootNamespace>
-    <AssemblyName>VSIXItemTemplates</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>PeekRelationshipTemplate</RootNamespace>
+    <AssemblyName>PeekRelationshipTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
     <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
     <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
     <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
-    <StartProgram>$(DevEnvDir)\devenv.exe</StartProgram>
-    <StartArguments>/rootsuffix Exp</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,43 +45,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="source.extension.vsixmanifest">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="source.extension.vsixmanifest" />
+    <None Include="PeekRelationshipIcon.png" />
+    <None Include="PeekRelationship.cs" />
+    <None Include="PeekableItem.cs" />
+    <None Include="PeekableItemSourceProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PeekRelationshipItemTemplate\PeekRelationshipTemplate.csproj">
-      <Project>{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}</Project>
-      <Name>PeekRelationshipTemplate</Name>
-      <VSIXSubPath>ItemTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="ItemTemplates\CommandHandlerTemplate\CommandHandlerTemplate.csproj">
-      <Project>{09291CD7-0A88-4D32-8096-D9C866F335AE}</Project>
-      <Name>CommandHandlerTemplate</Name>
-      <VSIXSubPath>ItemTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="ItemTemplates\OptionsPageTemplate\OptionsPageTemplate.csproj">
-      <Project>{8A9427D9-712F-4BF7-9063-129BAA486703}</Project>
-      <Name>OptionsPageTemplate</Name>
-      <VSIXSubPath>ItemTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="ItemTemplates\WpfTextViewCreationListenerTemplate\WpfTextViewCreationListenerTemplate.csproj">
-      <Project>{92475953-06B5-4FB3-9F6A-2860DAFA49DC}</Project>
-      <Name>WpfTextViewCreationListenerTemplate</Name>
-      <VSIXSubPath>ItemTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
+    <VSTemplate Include="PeekRelationshipTemplate.vstemplate">
+      <OutputSubPath>Extensibility\Editor</OutputSubPath>
+    </VSTemplate>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <!--
+    All items in this project are only template contents.
+    There are no source files to compile in this project. Disable Compile target to avoid "CSC: No source file specified" warning
+    -->
+    <CompileDependsOn>
+    </CompileDependsOn>
+  </PropertyGroup>
 </Project>
