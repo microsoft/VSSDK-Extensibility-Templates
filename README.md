@@ -10,6 +10,7 @@ Templates currently included:
 * CommandHandlerTemplate - Add a command handler and hook it up to Visual Studio.
 * OptionsPageTemplate - Add a page to the Visual Studio options dialog.
 * WpfTextViewCreationListenerTemplate - Create a basic implementation of IWpfTextViewCreationListener.
+* PeekProviderTemplate - Add a Peek provider to your VSIX project.
 
 ## How to use the templates
 Download and install the latest build from the [releases page](https://github.com/Microsoft/VSSDK-Extensibility-Templates/releases/latest).
