@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsPageTemplate", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandHandlerTemplate", "src\ItemTemplates\CommandHandlerTemplate\CommandHandlerTemplate.csproj", "{09291CD7-0A88-4D32-8096-D9C866F335AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeekRelationshipTemplate", "src\ItemTemplates\PeekRelationshipTemplate\PeekRelationshipTemplate.csproj", "{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeekProviderTemplate", "src\ItemTemplates\PeekProviderTemplate\PeekProviderTemplate.csproj", "{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

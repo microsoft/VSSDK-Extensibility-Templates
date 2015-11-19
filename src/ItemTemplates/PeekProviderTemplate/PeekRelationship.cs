@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.Language.Intellisense;
+﻿using System;
+using Microsoft.VisualStudio.Language.Intellisense;
 
 namespace $rootnamespace$
 {
@@ -16,6 +17,6 @@ namespace $rootnamespace$
 
         public string Name => $rootSafeItemName$.RelationshipName;
 
-        public static readonly $rootSafeItemName$ Instance = new $rootSafeItemName$();
+        public static readonly Lazy<$rootSafeItemName$> Instance = new Lazy<$rootSafeItemName$>(() => new $rootSafeItemName$() );
     }
 }

@@ -17,6 +17,11 @@ namespace $rootnamespace$
 
         internal $rootSafeItemName$PeekableItem(ITextBuffer textBuffer)
         {
+            if (textBuffer == null)
+            {
+                throw new ArgumentNullException(nameof(textBuffer));
+            }
+
             this.TextBuffer = textBuffer;
         }
 
@@ -26,7 +31,7 @@ namespace $rootnamespace$
         {
             get
             {
-                yield return $rootSafeItemName$.Instance;
+                yield return $rootSafeItemName$.Instance.Value;
             }
         }
 
@@ -47,7 +52,7 @@ namespace $rootnamespace$
         /// </summary>
         private class ResultSource : IPeekResultSource
         {
-            private $rootSafeItemName$PeekableItem item;
+            private readonly $rootSafeItemName$PeekableItem item;
 
             public ResultSource($rootSafeItemName$PeekableItem item)
             {

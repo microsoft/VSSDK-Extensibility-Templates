@@ -17,7 +17,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
-    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
     <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
     <CreateVsixContainer>false</CreateVsixContainer>
@@ -46,13 +46,13 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest" />
-    <None Include="PeekRelationshipIcon.png" />
+    <None Include="PeekProviderIcon.png" />
     <None Include="PeekRelationship.cs" />
     <None Include="PeekableItem.cs" />
     <None Include="PeekableItemSourceProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="PeekRelationshipTemplate.vstemplate">
+    <VSTemplate Include="PeekProviderTemplate.vstemplate">
       <OutputSubPath>Extensibility\Editor</OutputSubPath>
     </VSTemplate>
   </ItemGroup>

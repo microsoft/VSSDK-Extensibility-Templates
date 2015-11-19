@@ -28,10 +28,15 @@ namespace $rootnamespace$
     /// </summary>
     internal class $rootSafeItemName$PeekableItemSource : IPeekableItemSource
     {
-        private ITextBuffer textBuffer;
+        private readonly ITextBuffer textBuffer;
 
         internal $rootSafeItemName$PeekableItemSource(ITextBuffer textBuffer)
         {
+            if (textBuffer == null)
+            {
+                throw new ArgumentNullException(nameof(textBuffer));
+            }
+
             this.textBuffer = textBuffer;
         }
 

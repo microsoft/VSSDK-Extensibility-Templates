@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="$rootSafeItemName$.$registeredorganization$.$guid2$" Version="1.0" Language="en-US" Publisher="$registeredorganization$" />
     <DisplayName>$rootSafeItemName$</DisplayName>
-    <Description xml:space="preserve">This template creates and registers a command handler with an IVsTextView</Description>
+    <Description xml:space="preserve">This template creates a Peek provider for use in Visual Studio extensions.</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
@@ -14,7 +14,7 @@
   <Assets>
 
     <!-- Provides MEF components for $rootSafeItemName$ -->
-    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="PeekProviderTemplate" Path="|PeekProviderTemplate|" />
 
   </Assets>
 </PackageManifest>
