@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24713.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSSDKTemplates", "src\VSSDKTemplates.csproj", "{25B02CA0-6ABF-4FB3-A2B0-30184D3A7A70}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsPageTemplate", "src\ItemTemplates\OptionsPageTemplate\OptionsPageTemplate.csproj", "{8A9427D9-712F-4BF7-9063-129BAA486703}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandHandlerTemplate", "src\ItemTemplates\CommandHandlerTemplate\CommandHandlerTemplate.csproj", "{09291CD7-0A88-4D32-8096-D9C866F335AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeekProviderTemplate", "src\ItemTemplates\PeekProviderTemplate\PeekProviderTemplate.csproj", "{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{09291CD7-0A88-4D32-8096-D9C866F335AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09291CD7-0A88-4D32-8096-D9C866F335AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09291CD7-0A88-4D32-8096-D9C866F335AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +49,6 @@ Global
 		{92475953-06B5-4FB3-9F6A-2860DAFA49DC} = {D619A213-8306-4DD5-B20C-0FD79CD09475}
 		{8A9427D9-712F-4BF7-9063-129BAA486703} = {D619A213-8306-4DD5-B20C-0FD79CD09475}
 		{09291CD7-0A88-4D32-8096-D9C866F335AE} = {D619A213-8306-4DD5-B20C-0FD79CD09475}
+		{01D032A3-FF6B-4D37-AEB8-73272AE65D8A} = {D619A213-8306-4DD5-B20C-0FD79CD09475}
 	EndGlobalSection
 EndGlobal

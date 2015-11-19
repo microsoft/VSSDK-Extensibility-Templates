@@ -48,6 +48,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ItemTemplates\PeekProviderTemplate\PeekProviderTemplate.csproj">
+      <Project>{01D032A3-FF6B-4D37-AEB8-73272AE65D8A}</Project>
+      <Name>PeekProviderTemplate</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="ItemTemplates\CommandHandlerTemplate\CommandHandlerTemplate.csproj">
       <Project>{09291CD7-0A88-4D32-8096-D9C866F335AE}</Project>
       <Name>CommandHandlerTemplate</Name>
